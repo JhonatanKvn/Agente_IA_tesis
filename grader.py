@@ -10,3 +10,5 @@ class EvaluationResult:
 
 def evaluate_with_ocr_space(*args, **kwargs):
     return EvaluationResult()
+
+# trigger redeploy
