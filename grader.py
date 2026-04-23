@@ -1,6 +1,12 @@
-"""Compatibilidad: reexporta servicios de evaluacion."""
+class EvaluationResult:
+    def __init__(self):
+        self.score = 0
+        self.max_score = 5
+        self.feedback = "Evaluación no implementada"
+        self.code_transcription = ""
+        self.strengths = []
+        self.improvements = []
+        self.rubric_breakdown = []
 
-from app.services.grading import EvaluationResult, evaluate_demo, evaluate_with_ocr_space
-
-__all__ = ["EvaluationResult", "evaluate_demo", "evaluate_with_ocr_space"]
-
+def evaluate_with_ocr_space(*args, **kwargs):
+    return EvaluationResult()
