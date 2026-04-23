@@ -16,7 +16,7 @@ from app.db.repository import (
     list_student_summary,
     save_evaluation,
 )
-from app.services.grading import evaluate_with_ocr_space
+from grader import evaluate_with_ocr_space
 from app.services.image_processing import prepare_image_for_ocr
 
 
